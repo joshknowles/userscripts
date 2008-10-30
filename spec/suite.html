@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <!-- ScrewUnit Core -->
+    <script src="../lib/jquery-1.2.6.js"></script>
+    <script src="../lib/jquery.fn.js"></script>
+    <script src="../lib/jquery.print.js"></script>
+    <script src="../lib/screw.builder.js"></script>
+    <script src="../lib/screw.matchers.js"></script>
+    <script src="../lib/screw.events.js"></script>
+    <script src="../lib/screw.behaviors.js"></script>
+
+    <link rel="stylesheet" href="../lib/screw.css">
+
+    <!-- Fluid: RTM Growl Notifications -->
+    <script type="text/javascript">
+      window.fluid = {};
+      originalSetTextCalled = false;
+
+      statusBox = {
+        setText: function(text, x, y) {
+          originalSetTextCalled = true;
+        }
+      };
+    </script>
+
+    <script src="../src/fluid/rememberthemilk/fluid.rtm.growl.user.js"></script>
+
+    <script src="./fluid/rememberthemilk/fluid.rtm.growl.user.spec.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
